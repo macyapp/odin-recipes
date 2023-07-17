@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N-Queen Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>N-Queen Visualizer</h1>
+    <label for="n">Enter N:</label>
+    <input type="number" id="n" min="4" max="12" value="8">
+    <button onclick="startVisualization()">Start</button>
+    <button onclick="pauseResumeVisualization()">Pause/Resume</button>
+    <button onclick="stopVisualization()">Stop</button>
+    <div class="board" id="board"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+.input-container input {
+    padding: 5px;
+    width: 80px;
+}
+
+.input-container button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+}
+
+.action-buttons button {
+    margin-right: 10px;
+}
+
+.sorting-algorithm {
+    display: flex;
+    align-items: center;
+}
+
+.sorting-algorithm label {
+    margin-right: 10px;
+}
+
+.sorting-algorithm select {
+    padding: 5px;
+}
+
+.bars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.bar {
+    width: 10px;
+    margin: 0 1px;
+    background-color: #007bff;
+    transition: height 0.2s ease;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d80;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

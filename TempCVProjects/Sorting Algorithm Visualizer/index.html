@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+
+        <div class="controls">
+            <div class="input-container">
+                <label for="arraySize">Array Size:</label>
+                <input type="number" id="arraySize" min="1" max="200" value="50">
+                <button onclick="generateRandomArray()">Generate Random Array</button>
+            </div>
+
+            <div class="input-container">
+                <label for="arrayElements">Array Elements:</label>
+                <input type="text" id="arrayElements" placeholder="Enter elements separated by commas">
+            </div>
+
+            <div class="action-buttons">
+                <button onclick="startSorting()">Start Sorting</button>
+                <button onclick="pauseSorting()">Pause</button>
+                <button onclick="resumeSorting()">Resume</button>
+                <button onclick="stopSorting()">Stop</button>
+            </div>
+
+            <div class="sorting-algorithm">
+                <label for="sortingAlgorithm">Select Sorting Algorithm:</label>
+                <select id="sortingAlgorithm">
+                    <option value="bubbleSort">Bubble Sort</option>
+                    <option value="selectionSort">Selection Sort</option>
+                    <option value="insertionSort">Insertion Sort</option>
+                    <option value="quickSortLomuto">Quick Sort (Lomuto)</option>
+                    <option value="quickSortHoare">Quick Sort (Hoare)</option>
+                    <option value="heapSort">Heap Sort</option>
+                    <option value="countingSort">Counting Sort</option>
+                    <option value="radixSort">Radix Sort</option>
+                    <option value="bucketSort">Bucket Sort</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bars-container" id="bars-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
